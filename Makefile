@@ -9,5 +9,5 @@ AB.so: A.o B.o
 	ls -alh AB.so
 
 AB_stripped.so: A.o B.o
-	$(CXX) -shared -S -o $@ $^
+	$(CXX) -shared -Wl,-S -o $@ $^
 	ls -alh AB_stripped.so
