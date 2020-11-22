@@ -1,10 +1,6 @@
-class B {
-public:
-	B(int b_input);
-private:
-	int b;
-};
+#include "B.h"
 
 B::B(int b_input) {
 	b = b_input;
+	A a = A(b_input);
 }

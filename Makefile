@@ -6,6 +6,8 @@ all: AB.so AB_stripped.so
 
 AB.so: A.o B.o
 	$(CXX) -shared -o $@ $^
+	ls -alh AB.so
 
 AB_stripped.so: A.o B.o
 	$(CXX) -shared -S -o $@ $^
+	ls -alh AB_stripped.so
