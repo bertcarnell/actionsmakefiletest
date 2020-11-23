@@ -33,4 +33,5 @@ jobs:
           whoami
           env
           cat /etc/release
-          echo "O
+          echo "OK"
+          make
